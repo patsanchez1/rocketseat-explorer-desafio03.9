@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-blue-100: #065e7c;
+  --color-blue-200: #387e96;
+  --color-white-100: #f4fcff;
+  --color-pure-white: #ffffff;
+  --color-black-100: #202024;
+  --color-black-200: #121214;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  color: var(--color-black-100);
+}
+
+header {
+  background-color: var(--color-blue-100);
+  box-shadow: 1px 4px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1223px;
+}
+
+nav {
+  padding: 16px 0;
+
+  display: flex;
+  gap: 25px;
+}
+
+nav img {
+  background-color: var(--color-white-100);
+  width: 40px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 14px;
+
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+  background-color: var(--color-blue-200);
+  border-radius: 0.4rem;
+  border: none;
+}
+
+input::placeholder {
+  color: var(--color-pure-white);
+}
+
+main {
+  padding: 44px 0;
+  display: flex;
+  gap: 34px;
+}
+
+.article {
+  max-width: 800px;
+}
+
+/* main > img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+} */
+
+.title {
+  margin: 31px 0;
+  display: flex;
+  gap: 12px;
+}
+
+.title h1 {
+  flex: 1;
+}
+
+.title img {
+  max-width: 30px;
+  max-height: 30px;
+  width: 100%;
+  background-color: var(--color-blue-100);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.title img:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.article p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+footer {
+  display: block;
+  background-color: var(--color-blue-200);
+  color: var(--color-pure-white);
+  padding: 26px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.related-article h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-bottom: 3.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  padding-bottom: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.6rem;
+}
+
+li a img {
+  grid-row: 1/3;
+}
+
+li a:hover {
+  transform: scale(1.1);
+}
+
+a h3 {
+  color: var(--color-black-100);
+  font-size: 1.8rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+}
+
+a p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: var(--color-black-200);
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
